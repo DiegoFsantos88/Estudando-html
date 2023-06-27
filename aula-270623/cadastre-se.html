@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    
+    <h1>Formulário de Cadastro</h1>
+    
+    <form> 
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" maxlength="200" placeholder="Digite aqui seu nome completo"> <br>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="example@example.com" required> <br>
+
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="data" required> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do endereço</legend>
+
+        <label for="rua">Rua:</label>
+        <input type="text" name="rua" id="rua" maxlength="150" required><br>
+
+        <label for="numero">Número:</label>
+        <input type="text" name="numero" id="numero" maxlength="10" required><br>
+
+        <label for="complemento">Complemento:</label>
+        <input type="text" name="complemento" id="complemento"><br>
+
+        <label for="cep">Cep:</label>
+        <input type="text" name="cep" id="cep" maxlength="15" required><br> 
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" maxlength="100" required><br>
+
+        <label for="uf">UF:</label>
+        <input type="text" name="estado" id="estado" maxlength="2" required><br> 
+        </fieldset>
+
+        <label for="bio">Biografia:</label><br>
+        <textarea cols="30" rows="10" name="bio" id="bio" maxlength="200" placeholder="Fale um pouco sobre você" required></textarea> <br>
+
+        <select name="área de atuação">
+            <option disabled selected>Selecione sua área de atuação</option>
+            <option value="Fullstack">Fullstack</option>
+            <option value="cloud">cloud</option>
+            <option value="ambos">ambos</option>
+        </select> <br>
+
+        <button>Enviar</button> <button>Limpar</button>
+
+    </form>
+    
+</body>
+</html>
